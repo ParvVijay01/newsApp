@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
+          scrolledUnderElevation: 0,
           centerTitle: true,
         ),
         body: const NewsPageView(),

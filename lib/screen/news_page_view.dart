@@ -46,9 +46,14 @@ class _NewsPageViewState extends State<NewsPageView> {
               itemBuilder: (context, index) {
                 var news = snapshot.data![index];
                 return Container(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(15.0),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      Text(
+                        "${_currentPage + 1}.)",
+                        style: const TextStyle(fontSize: 20),
+                      ),
                       Image.network(
                         news['image_url'],
                         height: 400,

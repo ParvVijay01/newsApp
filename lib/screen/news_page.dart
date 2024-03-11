@@ -10,6 +10,7 @@ class NewsDetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 175, 213, 232),
+        scrolledUnderElevation: 0,
         title: Text(
           newsData['title'],
           style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
